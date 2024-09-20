@@ -24,28 +24,6 @@ spring:
           password: liwenjie
     druid:
       use-ping-method: false
-  data:
-    redis:
-      host: 127.0.0.1
-      port: 6379
-      database: 1
-      # 读超时
-      timeout: 3000
-      # 连接超时
-      connectTimeout: 5000
-      # Lettuce连接池
-      lettuce:
-        pool:
-          # 最小空闲连接
-          min-idle: 5
-          # 最大空闲连接
-          max-idle: 10
-          # 最大连接数
-          max-active: 100
-          # 连接分配应该阻塞的最大时间
-          max-wait: 2000
-    mongodb:
-      uri: mongodb://127.0.0.1:27017/test
   cloud:
     openfeign:
       client:
@@ -88,18 +66,5 @@ obvcloud:
   datasource:
     is-master-slave: true
     is-tenant: false
-  sms:
-    aliyun:
-      accessKeyId: LTAI5t75bc7rrQxcqY5FbxYw
-      accessKeySecret: g84y30WHIJupWzZj10INly9SaROMfR
-      endpoint: dysmsapi.aliyuncs.com
-    baidu:
-      access-key-id: ALTAKqkRcWh05Y7OpLUXiJWqnE
-      access-key-secret: a72e79a163674757966eeb26355eb8b3
-      endpoint: http://smsv3.bj.baidubce.com
-  upload:
-    local-root-path: /Users/liwenjie/www
-  feishu:
-    bot-key: acfb64a7-eb8e-4987-8b38-3082fba988f2
 
 
